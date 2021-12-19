@@ -1,3 +1,14 @@
+Package: renew-client-cert
+Version: 0.1
+Architecture: all
+Maintainer: me
+Filename: ./renew-client-cert_0.1_all.deb
+Size: 1556
+MD5sum: 01c5f20ff8f4c574da9ba42e08c2a569
+SHA1: 7d59cd8a6a7f0b2fdbbb29f10f82ca02707e4193
+SHA256: 65371fbc69435f6d1fb7a5ee44e92bedc0707757aee67e901964e1197f1364b9
+Description: Periodically renew client certificate.
+
 Package: step-cli
 Version: 0.18.0
 Architecture: amd64
