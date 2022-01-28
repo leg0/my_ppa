@@ -1,3 +1,18 @@
+Package: mqtt-display
+Version: 0.1.0
+Architecture: armhf
+Maintainer: leg0
+Installed-Size: 280
+Depends: openssl (>= 1.1.1k-1)
+Filename: ./mqtt-display_0.1.0.1_armhf.deb
+Size: 89892
+MD5sum: 7b51b3b50228479f862cbc6679236670
+SHA1: df4aff7a4da84a26e6acd775f7e286da505e0dad
+SHA256: b7c35b4fbdaf47e3248786954d5d3887ff009c0551be3ea2535c3f938b888a63
+Section: devel
+Priority: optional
+Description: Display data from MQTT on a LED matrix display
+
 Package: renew-client-cert
 Version: 0.1
 Architecture: all
