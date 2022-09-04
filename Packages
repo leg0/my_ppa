@@ -14,16 +14,16 @@ Priority: optional
 Description: Display data from MQTT on a LED matrix display
 
 Package: mqtt-to-sqlite
-Version: 0.1.1
-Architecture: amd64
+Version: 0.1.2
+Architecture: armhf
 Maintainer: Ahti Legonkov
-Installed-Size: 5773
-Depends: libc6 (>= 2.29)
-Filename: ./mqtt-to-sqlite_0.1.1_amd64.deb
-Size: 2155152
-MD5sum: 7bee4c2f69b28a8454c46b354fca9b25
-SHA1: 58896d572a360b491f0014f66d385095737368e4
-SHA256: 834ce4be21115fa7e6e32094fec342710b0d4815448cc6fdb15bcc3f2942b218
+Installed-Size: 3708
+Depends: libc6:armhf (>= 2.31)
+Filename: ./mqtt-to-sqlite_0.1.2_armhf.deb
+Size: 1824376
+MD5sum: 176501ccc2168e7ee0c9e6d919a7aa15
+SHA1: a5f7f17c14342a8b1ba7229631e72a206f64a77b
+SHA256: 5fd22a3a1ebce102355064414f508268e85aaef972b8cf08595de42ee9adbc21
 Priority: optional
 Description: Subscribes to MQTT topics and stores the data in time-series database.
  # mqtt-to-sqlite
@@ -71,16 +71,16 @@ Description: Subscribes to MQTT topics and stores the data in time-series databa
  ```
 
 Package: mqtt-to-sqlite
-Version: 0.1.1
-Architecture: armhf
+Version: 0.1.2
+Architecture: amd64
 Maintainer: Ahti Legonkov
-Installed-Size: 3708
-Depends: libc6:armhf (>= 2.31)
-Filename: ./mqtt-to-sqlite_0.1.1_armhf.deb
-Size: 1824564
-MD5sum: 01aaf5b8712c3df647564fc4b5d442cd
-SHA1: 1a776d15f33048c53d04afc71ec442cdd28d0a3d
-SHA256: 59c9feaa1575d708f16c1a8ae48e47774f9b9b567dec4fbed6b23047f37c837d
+Installed-Size: 5777
+Depends: libc6 (>= 2.29)
+Filename: ./mqtt-to-sqlite_0.1.2_amd64.deb
+Size: 2156432
+MD5sum: 7f6e00ea43b776a6dc8f5f7f7fcd201f
+SHA1: d29c8515280410814dbec4518261778007f0a944
+SHA256: 4e1216d98f5f175c6b1d80a3ebf9f3fbe8e23c145aea1f04bbbef22a0c8f992e
 Priority: optional
 Description: Subscribes to MQTT topics and stores the data in time-series database.
  # mqtt-to-sqlite
