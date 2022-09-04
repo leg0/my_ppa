@@ -13,6 +13,120 @@ Section: devel
 Priority: optional
 Description: Display data from MQTT on a LED matrix display
 
+Package: mqtt-to-sqlite
+Version: 0.1.1
+Architecture: amd64
+Maintainer: Ahti Legonkov
+Installed-Size: 5773
+Depends: libc6 (>= 2.29)
+Filename: ./mqtt-to-sqlite_0.1.1_amd64.deb
+Size: 2155152
+MD5sum: 7bee4c2f69b28a8454c46b354fca9b25
+SHA1: 58896d572a360b491f0014f66d385095737368e4
+SHA256: 834ce4be21115fa7e6e32094fec342710b0d4815448cc6fdb15bcc3f2942b218
+Priority: optional
+Description: Subscribes to MQTT topics and stores the data in time-series database.
+ # mqtt-to-sqlite
+ .
+ Simple utility that subscribes to MQTT topics, and stores values in SQLite3
+ database along with timestamps. This is to enable the use of
+ the data as data source for Grafana for example.
+ .
+ The utility is configured with a toml file that looks like this:
+ ```toml
+ uri = "ssl://mosquitto.lan:8883"
+ .
+ ca_cert =  "root_ca.crt"
+ # The client cert issued by the CA that the ca_cert belongs to.
+ client_cert = "client.crt"
+ client_key = "client.key"
+ .
+ # Path to the sqlite3 database file
+ db = "m2s.db"
+ .
+ # For now, it is expected that the payload os a message
+ # is in JSON format.
+ .
+ # When a message for topic a/c/b is received, a jq program given in json_path
+ # is run, and the result is written to the table 'metric_name'.
+ [metrics.metric_name]
+ mqtt_topic = "a/c/b"
+ json_path = ".q.w.e"
+ .
+ # This goes to metadata table
+ unit = "C"
+ .
+ # This goes to table 'another_metric'.
+ [metrics.another_metric]
+ mqtt_topic = "c/d/e"
+ json_path = ".z.x.c"
+ unit = "m"
+ ```
+ .
+ ## Create .deb package
+ .
+ ```
+ cargo deb --target armv7-unknown-linux-gnueabihf
+ cargo deb
+ ```
+
+Package: mqtt-to-sqlite
+Version: 0.1.1
+Architecture: armhf
+Maintainer: Ahti Legonkov
+Installed-Size: 3708
+Depends: libc6:armhf (>= 2.31)
+Filename: ./mqtt-to-sqlite_0.1.1_armhf.deb
+Size: 1824564
+MD5sum: 01aaf5b8712c3df647564fc4b5d442cd
+SHA1: 1a776d15f33048c53d04afc71ec442cdd28d0a3d
+SHA256: 59c9feaa1575d708f16c1a8ae48e47774f9b9b567dec4fbed6b23047f37c837d
+Priority: optional
+Description: Subscribes to MQTT topics and stores the data in time-series database.
+ # mqtt-to-sqlite
+ .
+ Simple utility that subscribes to MQTT topics, and stores values in SQLite3
+ database along with timestamps. This is to enable the use of
+ the data as data source for Grafana for example.
+ .
+ The utility is configured with a toml file that looks like this:
+ ```toml
+ uri = "ssl://mosquitto.lan:8883"
+ .
+ ca_cert =  "root_ca.crt"
+ # The client cert issued by the CA that the ca_cert belongs to.
+ client_cert = "client.crt"
+ client_key = "client.key"
+ .
+ # Path to the sqlite3 database file
+ db = "m2s.db"
+ .
+ # For now, it is expected that the payload os a message
+ # is in JSON format.
+ .
+ # When a message for topic a/c/b is received, a jq program given in json_path
+ # is run, and the result is written to the table 'metric_name'.
+ [metrics.metric_name]
+ mqtt_topic = "a/c/b"
+ json_path = ".q.w.e"
+ .
+ # This goes to metadata table
+ unit = "C"
+ .
+ # This goes to table 'another_metric'.
+ [metrics.another_metric]
+ mqtt_topic = "c/d/e"
+ json_path = ".z.x.c"
+ unit = "m"
+ ```
+ .
+ ## Create .deb package
+ .
+ ```
+ cargo deb --target armv7-unknown-linux-gnueabihf
+ cargo deb
+ ```
+
 Package: renew-client-cert
 Version: 0.1
 Architecture: all
