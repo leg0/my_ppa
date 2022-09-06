@@ -253,3 +253,40 @@ Homepage: https://github.com/smallstep/cli
 Description: step-cli lets you build, operate, and automate Public Key Infrastructure (PKI) systems and workflows.
  It's a swiss army knife for authenticated encryption (X.509, TLS), single sign-on (OAuth OIDC, SAML), multi-factor authentication (OATH OTP, FIDO U2F), encryption mechanisms (JSON Web Encryption, NaCl), and verifiable claims (JWT, SAML assertions).
 
+Package: step-cli
+Version: 0.22.0
+Architecture: armhf
+Maintainer: Smallstep Labs, Inc. <techadmin@smallstep.com>
+Installed-Size: 29091
+Filename: ./step-cli_0.22.0_armhf.deb
+Size: 7003472
+MD5sum: 4a3cd3dabcf6918fe05c973e5fe6c9c7
+SHA1: e159ecd54f4b07d86ee7596f75ccb7521763ca56
+SHA256: c394bd439fc6b33a35b8c17ad67d87b60ad1514fbd3d756fa9eb9dd9a3c09ef0
+Section: utils
+Priority: optional
+Homepage: https://github.com/smallstep/cli
+Description: Zero trust swiss army knife
+   step is a zero trust swiss army knife. It’s an easy-to-use and hard-to-misuse
+   utility for building, operating, and automating systems that use zero trust
+   technologies like authenticated encryption (X.509, TLS), single sign-on
+   (OAuth OIDC, SAML), multi-factor authentication (OATH OTP, FIDO U2F),
+   encryption mechanisms (JSON Web Encryption, NaCl), and verifiable claims
+   (JWT, SAML assertions)
+
+Package: step-cli
+Version: 0.22.0
+Architecture: amd64
+Maintainer: Smallstep <techadmin@smallstep.com>
+Installed-Size: 31116
+Filename: ./step-cli_0.22.0_amd64.deb
+Size: 11567750
+MD5sum: cb0654a6e8cf1ad061f24c054021776f
+SHA1: c81f3bc8affd560ff43e045abce0d900239e7d09
+SHA256: 5e06c0729e774bf9e7d2107c7a000071b9c626e8d956de746aa53806465cb34a
+Section: utils
+Priority: optional
+Homepage: https://github.com/smallstep/cli
+Description: step-cli lets you build, operate, and automate Public Key Infrastructure (PKI) systems and workflows.
+ It's a swiss army knife for authenticated encryption (X.509, TLS), single sign-on (OAuth OIDC, SAML), multi-factor authentication (OATH OTP, FIDO U2F), encryption mechanisms (JSON Web Encryption, NaCl), and verifiable claims (JWT, SAML assertions).
+
