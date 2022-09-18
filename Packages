@@ -185,14 +185,15 @@ Description: Subscribes to MQTT topics and stores the data in time-series databa
  ```
 
 Package: renew-client-cert
-Version: 0.1
+Version: 0.2
 Architecture: all
 Maintainer: me
-Filename: ./renew-client-cert_0.1_all.deb
-Size: 1556
-MD5sum: 01c5f20ff8f4c574da9ba42e08c2a569
-SHA1: 7d59cd8a6a7f0b2fdbbb29f10f82ca02707e4193
-SHA256: 65371fbc69435f6d1fb7a5ee44e92bedc0707757aee67e901964e1197f1364b9
+Depends: step-cli (>=0.22.0)
+Filename: ./renew-client-cert_0.2_all.deb
+Size: 1604
+MD5sum: 5436a958075220fafba07c637cfbc55f
+SHA1: 5e85ff76fe7838d2e5f8778fc6ed357b69490096
+SHA256: a1b659cf4fc8e31ce5d733b8ea085a625d1a35a49add7f4418d3fabfe4e15865
 Description: Periodically renew client certificate.
 
 Package: step-cli
